@@ -8,6 +8,7 @@ This repo is a public preview, not a full public launch.
 
 - GitHub repo: [DennisHedegreen/belgium-politics-data](https://github.com/DennisHedegreen/belgium-politics-data)
 - Visibility: `public`
+- Live app: [belgium-politics-data Streamlit app](https://belgium-politics-data-hetgwp6yhueo4ffajjw7sd.streamlit.app/)
 - Public status: `preview`; TID door is preview-only, not a full country launch
 
 ## Declared Scope

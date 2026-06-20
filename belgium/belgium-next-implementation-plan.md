@@ -124,17 +124,22 @@ Current state:
 - generated mirror test `python3 -m unittest tests/test_public_surface.py`
   passes from the mirror root
 - local generated mirror Streamlit smoke passed on `2026-06-21` at
-  `http://127.0.0.1:8502/`; screenshot written to
-  `/tmp/belgium-mirror-ui-smoke.png`
+  `http://127.0.0.1:8502/`; Playwright screenshot written to
+  `/tmp/belgium-mirror-ui-smoke-playwright.png`
+- public GitHub preview mirror exists at
+  `https://github.com/DennisHedegreen/belgium-politics-data`
+- GitHub readback confirms the mirror is `PUBLIC`, default branch is `main`,
+  and the local mirror tracks `origin/main`
+- public Streamlit preview exists at
+  `https://belgium-politics-data-hetgwp6yhueo4ffajjw7sd.streamlit.app/`
+- live Streamlit readback passed in Playwright on `2026-06-21`; screenshot
+  written to `/tmp/belgium-streamlit-live-readback.png`
 
 Next useful passes:
 
-1. review the generated mirror wording/readback one more time before public
-   push
-2. create and push the GitHub mirror only after an explicit go decision
-3. connect Streamlit Community Cloud only after GitHub readback passes
-4. create a preview-labelled TID door only after live Streamlit readback passes
-5. decide later whether one household/nationality factor belongs in the
+1. create a preview-labelled TID door only after confirming the public wording
+   still fits the TID surface
+2. decide later whether one household/nationality factor belongs in the
    preview or should stay future/internal
 
 First no-go conditions:

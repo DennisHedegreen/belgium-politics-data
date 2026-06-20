@@ -17,9 +17,13 @@ Check:
 - `National result`
 - `About & sources`
 
-## Streamlit Community Cloud draft
+## Live Streamlit Preview
 
-Use Streamlit Community Cloud with the GitHub repo already pushed:
+- Live app: [belgium-politics-data Streamlit app](https://belgium-politics-data-hetgwp6yhueo4ffajjw7sd.streamlit.app/)
+
+## Streamlit Community Cloud settings
+
+Current Streamlit Community Cloud settings:
 
 - Repository: `DennisHedegreen/belgium-politics-data`
 - Branch: `main`

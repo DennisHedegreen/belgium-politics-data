@@ -6,11 +6,12 @@ The correct next public shape is **public preview**, not full public launch.
 
 ## Public Now
 
-Nothing.
+Belgium now has a public GitHub preview mirror only:
 
-- no public Belgium app
-- no Belgium mirror repo
-- no Belgium Streamlit Community Cloud app
+- `https://github.com/DennisHedegreen/belgium-politics-data`
+- `https://belgium-politics-data-hetgwp6yhueo4ffajjw7sd.streamlit.app/`
+
+- public Streamlit Community Cloud preview is live
 - no Belgium TID door
 - no public homepage link
 - no shared public country-switch exposure
@@ -72,8 +73,8 @@ Belgium can get a GitHub/Streamlit public-preview mirror only after all of this 
 - [x] public-preview methodology/source wording is drafted
 - [x] `export_public_country_repo.py` has a Belgium preview spec
 - [x] exported mirror is tested locally from the generated repo root
-- [ ] GitHub repo is created only after the local mirror test passes
-- [ ] Streamlit Community Cloud is connected only after GitHub readback passes
+- [x] GitHub repo is created only after the local mirror test passes
+- [x] Streamlit Community Cloud is connected only after GitHub readback passes
 - [ ] TID preview door is created only after live Streamlit readback passes
 
 ## Hard No-Go Conditions
@@ -91,4 +92,4 @@ Do not publish a Belgium mirror if any of these are true:
 
 ## Rule
 
-Belgium may move toward GitHub and Streamlit only as a **public preview**. The local preview mirror now exists and passes local readback, but GitHub, Streamlit Community Cloud, and any TID preview door remain separate next decisions.
+Belgium may move toward public exposure only as a **public preview**. The public GitHub mirror and public Streamlit preview exist and have passed readback, but any TID preview door remains a separate next decision.
