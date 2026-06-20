@@ -1,0 +1,61 @@
+{
+  "country": "Belgium",
+  "country_id": "belgium",
+  "status": "internal_candidate",
+  "factor_id": "population",
+  "year": 2025,
+  "reference_period": "2025-01-01",
+  "generated_at": "2026-06-20T15:46:42Z",
+  "raw_inputs": [
+    {
+      "label": "statbel_population_by_municipality_workbook",
+      "path": "data/politics/belgium/factors/raw/statbel-population-by-municipality/Population_par_commune.xlsx",
+      "sha256": "ba1bba1577929f0e1eced196331adebe9e6f2febd9b0713e439685d165e20b09",
+      "bytes": 1254187
+    },
+    {
+      "label": "statbel_refnis_zip",
+      "path": "data/politics/belgium/geography/raw/statbel-refnis/TU_COM_REFNIS.zip",
+      "sha256": "98f867a1b2c4076828cd80917abf2fe09a85c12e4e35a635e0ce93026ab80b0c",
+      "bytes": 33983
+    },
+    {
+      "label": "bridge_safe_2025_geography_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_2025_municipality_bridge_safe.csv",
+      "sha256": "3a8c084a4f1b2c26248c1c1452d69edb930af3b4628edfacdfafce56378e053c",
+      "bytes": 2317748
+    }
+  ],
+  "outputs": [
+    {
+      "label": "population_factor",
+      "path": "World-politics-data/belgium/factors/population.csv",
+      "sha256": "5603d942c70559a34f437ef46f19846b055553fa9aa59afb705d093aeb9616d8",
+      "bytes": 136431
+    },
+    {
+      "label": "population_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/population_2025_coverage_audit.csv",
+      "sha256": "1bb5c74c3c4e1f084bd3bd69b54b02cfd9fae3e8f3008ff328f797500fcac268",
+      "bytes": 51475
+    }
+  ],
+  "checks": {
+    "workbook_population_sheet": "Population en 2025",
+    "workbook_coded_rows": 622,
+    "municipality_codes_2025": 565,
+    "population_factor_rows": 565,
+    "population_bridge_safe_2025_matches": 559,
+    "population_bridge_safe_2025_missing": [],
+    "population_extra_active_2025_rows_not_in_first_bridge_safe_layer": [
+      "23098",
+      "23099",
+      "23100",
+      "23101",
+      "23102",
+      "23103"
+    ],
+    "total_population_sum_municipalities": 11825551
+  },
+  "method_boundary": "Population is promoted as a country-local Belgium factor from the coded Statbel workbook sheet `Population en 2025`. The factor keeps all selected Statbel 2025 municipality codes; the coverage audit separately documents that the first bridge-safe election layer covers 559 of those rows because six facility/rand municipalities remain outside the first runtime election geography."
+}

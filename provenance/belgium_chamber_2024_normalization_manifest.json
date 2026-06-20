@@ -1,0 +1,174 @@
+{
+  "country": "Belgium",
+  "country_id": "belgium",
+  "status": "internal_candidate",
+  "election_type": "Chamber",
+  "election_year": 2024,
+  "election_date": "2024-06-09",
+  "generated_at": "2026-06-20T15:46:42Z",
+  "source_endpoints": {
+    "municipality": "https://api.electionresults.belgium.be/election-level?Types=Chamber&ElectionDates=2024-06-09T00:00:00.000Z&Descriptions=Municipality&Detailed=true&PageSize=1000",
+    "country": "https://api.electionresults.belgium.be/election-level?Types=Chamber&ElectionDates=2024-06-09T00:00:00.000Z&Descriptions=Country&Detailed=true&PageSize=20"
+  },
+  "raw_inputs": [
+    {
+      "label": "ibz_api_municipality_levels",
+      "path": "data/politics/belgium/elections/raw/2024-chamber/ibz-api/election-level-municipality.json",
+      "sha256": "e4f0d93a2559711fbba43223e50a108f89d273f8c289221141a92332acf7563a",
+      "bytes": 2107656
+    },
+    {
+      "label": "ibz_api_country_level",
+      "path": "data/politics/belgium/elections/raw/2024-chamber/ibz-api/election-level-country.json",
+      "sha256": "df3237b0d782c8db6a4b13372cfd428a0fba58e7fa21e1bda2a2d33b156298b3",
+      "bytes": 14411
+    },
+    {
+      "label": "statbel_refnis_zip",
+      "path": "data/politics/belgium/geography/raw/statbel-refnis/TU_COM_REFNIS.zip",
+      "sha256": "98f867a1b2c4076828cd80917abf2fe09a85c12e4e35a635e0ce93026ab80b0c",
+      "bytes": 33983
+    },
+    {
+      "label": "statbel_2025_merger_bridge_verified_note",
+      "path": "World-politics-data/belgium/geography/belgium_2025_merger_bridge_verified_statbel_note.csv",
+      "sha256": "0044899520c65282817009f883b186a346fd71b0bb7c2a1b374c287bf3122cc6",
+      "bytes": 10218
+    }
+  ],
+  "outputs": [
+    {
+      "label": "full_municipality_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_municipality.csv",
+      "sha256": "2803bff96ea608b181027ae452760cf46ada17dff5f25143879768d36ffc3d7b",
+      "bytes": 1004697
+    },
+    {
+      "label": "bridge_safe_municipality_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_municipality_bridge_safe.csv",
+      "sha256": "1be42d68e3738f44c88b874154e208e92614e13e939b1a010249ce817d0e16bf",
+      "bytes": 958047
+    },
+    {
+      "label": "bridge_safe_2025_geography_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_2025_municipality_bridge_safe.csv",
+      "sha256": "3a8c084a4f1b2c26248c1c1452d69edb930af3b4628edfacdfafce56378e053c",
+      "bytes": 2317748
+    },
+    {
+      "label": "official_country_vote_share",
+      "path": "World-politics-data/belgium/chamber/chamber_national_vote_share.csv",
+      "sha256": "1753086b825aa741531def2ef9d9da9d11ae7e8b3dd46ea000e61954facafda5",
+      "bytes": 2860
+    },
+    {
+      "label": "municipality_audit",
+      "path": "World-politics-data/belgium/chamber/chamber_municipality_audit.csv",
+      "sha256": "b50bfc3ab9684d3a34232045e981a046b0985feefb6c9b236408fbfb6ec20fa4",
+      "bytes": 58315
+    },
+    {
+      "label": "ibz_municipality_geography_audit",
+      "path": "World-politics-data/belgium/geography/ibz_municipality_geography_audit.csv",
+      "sha256": "b3e5a796721330fd2bc41f5297dfaf9ff65d03ba3c0df8175d5ba4ea173ec786",
+      "bytes": 115058
+    },
+    {
+      "label": "facility_language_layer_audit",
+      "path": "World-politics-data/belgium/geography/facility_language_layer_audit.csv",
+      "sha256": "9af561404244d3bebde7b3ef7c360638da9dcc70ee870e709ce6aafccfad524f",
+      "bytes": 3095
+    },
+    {
+      "label": "refnis_2024_municipality_reconciliation",
+      "path": "World-politics-data/belgium/geography/refnis_2024_municipality_reconciliation.csv",
+      "sha256": "878fae8eee1adf1ce67d8e0f0403b231d9553fd85a7506a7195a89911735b30a",
+      "bytes": 147801
+    },
+    {
+      "label": "population_factor_candidate",
+      "path": "World-politics-data/belgium/factors/population.csv",
+      "sha256": "5603d942c70559a34f437ef46f19846b055553fa9aa59afb705d093aeb9616d8",
+      "bytes": 136431
+    },
+    {
+      "label": "population_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/population_2025_coverage_audit.csv",
+      "sha256": "1bb5c74c3c4e1f084bd3bd69b54b02cfd9fae3e8f3008ff328f797500fcac268",
+      "bytes": 51475
+    },
+    {
+      "label": "population_density_factor_candidate",
+      "path": "World-politics-data/belgium/factors/population_density.csv",
+      "sha256": "e805a4d77aac7486678516ff88e591b0e9576d800a09e2d69482eb39cb982ddd",
+      "bytes": 162913
+    },
+    {
+      "label": "population_density_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/population_density_2025_coverage_audit.csv",
+      "sha256": "982cd145b3bd14e33a8e779a6dda24f746d0244068386461a7a40ee7e29610c5",
+      "bytes": 61821
+    },
+    {
+      "label": "age65_factor_candidate",
+      "path": "World-politics-data/belgium/factors/age65_pct.csv",
+      "sha256": "dd4130fb84b82f695b35a2337cbf08602938dc2c5275a8fb014e28b174c67d34",
+      "bytes": 145713
+    },
+    {
+      "label": "age65_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/age65_2025_coverage_audit.csv",
+      "sha256": "6300b9cf692906627b9d9bb247f54e280e640f2dfce61ce4f34722281e85e082",
+      "bytes": 55035
+    }
+  ],
+  "checks": {
+    "municipality_level_rows": 592,
+    "unique_nis_codes": 592,
+    "probable_statbel_municipality_rows": 581,
+    "active_refnis_municipality_rows_on_election_date": 581,
+    "ibz_probable_municipality_refnis_matches": 581,
+    "ibz_probable_municipality_refnis_missing": [],
+    "municipality_party_rows": 6818,
+    "bridge_safe_municipality_level_rows": 575,
+    "bridge_safe_party_rows": 6522,
+    "bridge_safe_2025_geography_level_rows": 559,
+    "bridge_safe_2025_geography_party_rows": 6356,
+    "facility_language_layer_audit_rows": 6,
+    "facility_language_layer_largest_group_matches_valid_votes": 5,
+    "bridge_safe_2025_merged_target_rows": 14,
+    "non_reconciling_municipality_rows": [
+      "Drogenbos",
+      "Kraainem",
+      "Linkebeek",
+      "Rode-Saint-Genese",
+      "Wemmel",
+      "Wezembeek-Oppem"
+    ],
+    "special_bucket_rows": [
+      "Anvers (E5)",
+      "Bruxelles (E5)",
+      "Louvain (E5)",
+      "Nivelles (E5)",
+      "Bruges (E5)",
+      "Gand (E5)",
+      "Mons (E5)",
+      "Liège (E5)",
+      "Hasselt (E5)",
+      "Arlon (E5)",
+      "Namur (E5)"
+    ],
+    "country_valid_votes": 6984906,
+    "country_party_vote_sum": 6984906,
+    "population_factor_rows": 565,
+    "population_bridge_safe_2025_matches": 559,
+    "population_bridge_safe_2025_missing": [],
+    "population_density_factor_rows": 565,
+    "population_density_bridge_safe_2025_matches": 559,
+    "population_density_bridge_safe_2025_missing": [],
+    "age65_factor_rows": 565,
+    "age65_bridge_safe_2025_matches": 559,
+    "age65_bridge_safe_2025_missing": []
+  },
+  "method_boundary": "The full municipality-level candidate keeps every IBZ municipality row. The bridge-safe candidate excludes E5 special buckets and rows where party/list votes do not reconcile to the row valid-vote total. The 2025-geography bridge-safe candidate aggregates 2024 bridge-safe election rows forward to verified Statbel 2025 merger targets. Turnout is not promoted because the first municipality-level API path returns nrOfEligibleVoters=0."
+}

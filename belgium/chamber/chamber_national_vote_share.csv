@@ -1,0 +1,26 @@
+election_year,election_date,geography_id,geography_name,party,party_id,list_number,language_group,votes,valid_votes,blank_votes,share,seats,source_scope
+2024,2024-06-09,0,Kingdom,N-VA,303352,10,Dutch,1167061,6984906,416577,16.7083,24,official_country_total
+2024,2024-06-09,0,Kingdom,VLAAMS BELANG,305802,1,Dutch,961601,6984906,416577,13.7668,20,official_country_total
+2024,2024-06-09,0,Kingdom,MR,303367,2,DutchFrench,716934,6984906,416577,10.264,20,official_country_total
+2024,2024-06-09,0,Kingdom,PVDA,303048,8,Dutch,688369,6984906,416577,9.8551,15,official_country_total
+2024,2024-06-09,0,Kingdom,Vooruit,305967,9,Dutch,566436,6984906,416577,8.1094,13,official_country_total
+2024,2024-06-09,0,Kingdom,PS,293015,4,DutchFrench,561602,6984906,416577,8.0402,16,official_country_total
+2024,2024-06-09,0,Kingdom,CD&V,303356,16,Dutch,557392,6984906,416577,7.9799,11,official_country_total
+2024,2024-06-09,0,Kingdom,LES ENGAGÉS,305972,6,DutchFrench,472755,6984906,416577,6.7682,14,official_country_total
+2024,2024-06-09,0,Kingdom,open vld,305803,3,Dutch,380659,6984906,416577,5.4497,7,official_country_total
+2024,2024-06-09,0,Kingdom,GROEN,303164,15,Dutch,324608,6984906,416577,4.6473,6,official_country_total
+2024,2024-06-09,0,Kingdom,ECOLO,293013,14,DutchFrench,204438,6984906,416577,2.9269,3,official_country_total
+2024,2024-06-09,0,Kingdom,DéFI,305911,13,DutchFrench,84024,6984906,416577,1.2029,1,official_country_total
+2024,2024-06-09,0,Kingdom,Partij BLANCO,305969,20,Dutch,75683,6984906,416577,1.0835,0,official_country_total
+2024,2024-06-09,0,Kingdom,CHEZ NOUS,305981,21,French,64058,6984906,416577,0.9171,0,official_country_total
+2024,2024-06-09,0,Kingdom,Voor U,305968,17,Dutch,43346,6984906,416577,0.6206,0,official_country_total
+2024,2024-06-09,0,Kingdom,COLLECTIF CITOYEN,305920,20,DutchFrench,35706,6984906,416577,0.5112,0,official_country_total
+2024,2024-06-09,0,Kingdom,Team Fouad Ahidar,305974,19,DutchFrench,24826,6984906,416577,0.3554,0,official_country_total
+2024,2024-06-09,0,Kingdom,BELG.UNIE-BUB,303439,21,Dutch,15780,6984906,416577,0.2259,0,official_country_total
+2024,2024-06-09,0,Kingdom,DierAnimal,305916,19,Dutch,10341,6984906,416577,0.148,0,official_country_total
+2024,2024-06-09,0,Kingdom,Volt Europa,305966,5,Dutch,7245,6984906,416577,0.1037,0,official_country_total
+2024,2024-06-09,0,Kingdom,LUTTE OUVRIERE,305977,24,DutchFrench,6552,6984906,416577,0.0938,0,official_country_total
+2024,2024-06-09,0,Kingdom,l'Unie,305976,23,DutchFrench,5640,6984906,416577,0.0807,0,official_country_total
+2024,2024-06-09,0,Kingdom,RMC,305982,22,French,4025,6984906,416577,0.0576,0,official_country_total
+2024,2024-06-09,0,Kingdom,Agora,305913,7,DutchFrench,3473,6984906,416577,0.0497,0,official_country_total
+2024,2024-06-09,0,Kingdom,GV-GEZOND VERSTAND,305985,20,Dutch,2352,6984906,416577,0.0337,0,official_country_total

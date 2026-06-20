@@ -1,0 +1,62 @@
+{
+  "country": "Belgium",
+  "country_id": "belgium",
+  "status": "internal_candidate",
+  "factor_id": "population_density",
+  "year": 2025,
+  "reference_period": "2025-01-01",
+  "generated_at": "2026-06-20T15:46:42Z",
+  "raw_inputs": [
+    {
+      "label": "statbel_population_density_workbook",
+      "path": "data/politics/belgium/factors/raw/statbel-structure-population-extra-downloads/Pop_density_fr.xlsx",
+      "sha256": "a436d671274c1f57cb006b3c74e6defe11eddb3fe783a93f7340796af4246189",
+      "bytes": 287502
+    },
+    {
+      "label": "statbel_refnis_zip",
+      "path": "data/politics/belgium/geography/raw/statbel-refnis/TU_COM_REFNIS.zip",
+      "sha256": "98f867a1b2c4076828cd80917abf2fe09a85c12e4e35a635e0ce93026ab80b0c",
+      "bytes": 33983
+    },
+    {
+      "label": "bridge_safe_2025_geography_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_2025_municipality_bridge_safe.csv",
+      "sha256": "3a8c084a4f1b2c26248c1c1452d69edb930af3b4628edfacdfafce56378e053c",
+      "bytes": 2317748
+    }
+  ],
+  "outputs": [
+    {
+      "label": "population_density_factor",
+      "path": "World-politics-data/belgium/factors/population_density.csv",
+      "sha256": "e805a4d77aac7486678516ff88e591b0e9576d800a09e2d69482eb39cb982ddd",
+      "bytes": 162913
+    },
+    {
+      "label": "population_density_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/population_density_2025_coverage_audit.csv",
+      "sha256": "982cd145b3bd14e33a8e779a6dda24f746d0244068386461a7a40ee7e29610c5",
+      "bytes": 61821
+    }
+  ],
+  "checks": {
+    "workbook_population_density_sheet": "2025",
+    "workbook_coded_rows": 565,
+    "municipality_codes_2025": 565,
+    "population_density_factor_rows": 565,
+    "population_density_bridge_safe_2025_matches": 559,
+    "population_density_bridge_safe_2025_missing": [],
+    "population_density_extra_2025_rows_not_in_first_bridge_safe_layer": [
+      "23098",
+      "23099",
+      "23100",
+      "23101",
+      "23102",
+      "23103"
+    ],
+    "min_population_density": 24.8992,
+    "max_population_density": 23485.966
+  },
+  "method_boundary": "Population density is promoted as a country-local Belgium factor from the coded Statbel workbook `Pop_density_fr.xlsx`, sheet `2025`. It uses Statbel inhabitants per km2 values. The provisional `2026 P` sheet is deliberately not promoted because Statbel notes that 2026 area values were not yet published and the sheet reuses 2025 areas."
+}

@@ -1,0 +1,63 @@
+{
+  "country": "Belgium",
+  "country_id": "belgium",
+  "status": "internal_candidate",
+  "factor_id": "age65",
+  "year": 2026,
+  "reference_period": "2026-01-01",
+  "generated_at": "2026-06-20T15:46:42Z",
+  "raw_inputs": [
+    {
+      "label": "statbel_social_population_structure_2026_zip",
+      "path": "data/politics/belgium/factors/raw/statbel-social-population-structure-2026/TF_SOC_POP_STRUCT_2026.zip",
+      "sha256": "5d7e3842fe442c086243f850f5a75d72cfbac9330738fd77b5e259cab75b4b9d",
+      "bytes": 2566901
+    },
+    {
+      "label": "statbel_refnis_zip",
+      "path": "data/politics/belgium/geography/raw/statbel-refnis/TU_COM_REFNIS.zip",
+      "sha256": "98f867a1b2c4076828cd80917abf2fe09a85c12e4e35a635e0ce93026ab80b0c",
+      "bytes": 33983
+    },
+    {
+      "label": "bridge_safe_2025_geography_party_share_candidate",
+      "path": "World-politics-data/belgium/chamber/chamber_party_share_by_2025_municipality_bridge_safe.csv",
+      "sha256": "3a8c084a4f1b2c26248c1c1452d69edb930af3b4628edfacdfafce56378e053c",
+      "bytes": 2317748
+    }
+  ],
+  "outputs": [
+    {
+      "label": "age65_factor",
+      "path": "World-politics-data/belgium/factors/age65_pct.csv",
+      "sha256": "dd4130fb84b82f695b35a2337cbf08602938dc2c5275a8fb014e28b174c67d34",
+      "bytes": 145713
+    },
+    {
+      "label": "age65_2025_coverage_audit",
+      "path": "World-politics-data/belgium/factors/age65_2025_coverage_audit.csv",
+      "sha256": "6300b9cf692906627b9d9bb247f54e280e640f2dfce61ce4f34722281e85e082",
+      "bytes": 55035
+    }
+  ],
+  "checks": {
+    "source_txt": "TF_SOC_POP_STRUCT_2026.txt",
+    "source_raw_rows": 467615,
+    "municipality_codes_2025": 565,
+    "age65_factor_rows": 565,
+    "age65_bridge_safe_2025_matches": 559,
+    "age65_bridge_safe_2025_missing": [],
+    "age65_extra_2025_rows_not_in_first_bridge_safe_layer": [
+      "23098",
+      "23099",
+      "23100",
+      "23101",
+      "23102",
+      "23103"
+    ],
+    "total_population_sum_municipalities": 11867634,
+    "total_age65_sum_municipalities": 2452949,
+    "national_age65_pct_from_municipal_sum": 20.669234
+  },
+  "method_boundary": "Age 65+ is promoted as a family-mapped Belgium factor from the official Statbel 2026 social population-structure flat file. The factor sums all sex/nationality/civil-status rows by municipality and age, then divides age >= 65 population by total population. It is a 2026 structural factor joined for exploratory use against the 2025 bridge-safe election geography; the coverage audit keeps that reference-year mismatch visible."
+}
